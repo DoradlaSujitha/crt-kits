@@ -1,0 +1,26 @@
+#example1
+a=[1,2,35,6,8,6,5,8,99,0,66]
+print("List is :",a)
+print("Length of list is:",len(a))
+print("Maximum of list is:",max(a))
+print("Minimum of list is:",min(a))
+print("Sum of list is:",sum(a))
+print("Average of list is:",sum(a)/len(a))
+print("Sorted  list is:",sorted(a))
+a.append(5)
+print(a)
+a.insert(2,85)
+print(a)
+a.remove(2)
+print(a)
+a.pop(8)
+print(a)
+print(a.count(5))
+a.index(85)
+print(a)
+a.reverse()
+print(a)
+a.sort()
+print(a)
+
+#example2

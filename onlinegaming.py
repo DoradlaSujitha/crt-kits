@@ -1,0 +1,24 @@
+class Player:
+    def __init__(self, player_name):
+        self.player_name = player_name
+class Match:
+    def __init__(self, scores):
+        self.scores = scores
+class Tournament:
+    def final_score(self, match):
+        return sum(match.scores)
+    def generate_report(self, player, match):
+        self.player=player
+        self.match=match
+        score = self.final_score(match)
+        print("=" * 50)
+        print("TOURNAMENT REPORT")
+        print("=" * 50)
+        print(f"Player Name : {player.player_name}")
+        print(f"Final Score : {score}")
+        print("Rank Status : QUALIFIED")
+        print("=" * 50)
+player = Player("Scott")
+match = Match([100, 150, 200])
+tournament = Tournament()
+tournament.generate_report(player, match)
