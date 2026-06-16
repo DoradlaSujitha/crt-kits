@@ -1,0 +1,21 @@
+amt=int(input("Enter amount:"))
+notes=[500,200,100,50,20,10,5,2,1]
+count_500=amt//500
+rem=amt%500
+count_200=rem//200
+rem=rem%200
+count_100=rem//100
+rem=rem%100
+count_50=rem//50
+rem=rem%50
+count_20=rem//20
+rem=rem%20
+count_10=rem//10
+rem=rem%10
+count_5=rem//5
+rem=rem%5
+count_2=rem//2
+rem=rem%2
+count_1=rem//1
+rem=rem%1
+print(f"500--->{count_500},\n200--->{count_200},\n100--->{count_100},\n50--->{count_50},\n20--->{count_20},\n10--->{count_10},\n5--->{count_5},\n2--->{count_2},\n1--->{count_1}")
